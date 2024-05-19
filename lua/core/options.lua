@@ -1,0 +1,33 @@
+vim.opt.winbar = "%m %f %r%=%h"
+vim.opt.laststatus = 3
+vim.opt.guicursor = "a:block-Cursor,r:hor20"
+vim.opt.cursorline = true
+vim.opt.expandtab = true
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.smarttab = true
+vim.opt.autoindent = true
+vim.opt.number = true
+vim.opt.relativenumber = true
+vim.opt.hlsearch = false
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+vim.opt.inccommand = "split"
+vim.opt.splitright = true
+vim.opt.splitbelow = true
+vim.opt.list = false
+vim.opt.listchars = {
+    eol = '',
+    trail = '.',
+    tab = " "
+}
+vim.g.mapleader = " "
+vim.opt.scrolloff = 8
+vim.opt.signcolumn = "yes"
+vim.opt.wrap = false
+vim.opt.termguicolors = true
+vim.opt.undofile = true
+vim.opt.showmode = true
+vim.g.netrw_liststyle = 3
+vim.g.netrw_banner = 0
+vim.g.netrw_list_hide = ".git"

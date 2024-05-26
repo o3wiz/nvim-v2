@@ -83,6 +83,11 @@ return {
             SetTelescopeKeymap({"n"}, "<leader>sn", function()
                 builtin.find_files { cwd = vim.fn.stdpath "config" }
             end, "[S]earch [N]eovim files")
+            SetTelescopeKeymap({"n"}, "<leader>gT", builtin.lsp_type_definitions, "[L]SP [G]oto [T]ype definitions")
+            SetTelescopeKeymap({"n"}, "<leader>gd", builtin.lsp_definitions, "[L]SP [G]oto [D]efinitions")
+            SetTelescopeKeymap({"n"}, "<leader>gr", builtin.lsp_references, "[L]SP [G]oto [R]eferences")
+            SetTelescopeKeymap({"n"}, "<leader>ds", builtin.lsp_document_symbols,  "[L]SP [D]ocument [S]ymbols" )
+            SetTelescopeKeymap({"n"}, "<leader>ws", builtin.lsp_dynamic_workspace_symbols,  "[L]SP [W]orkspace [S]ymbols" )
         end
     }
 }

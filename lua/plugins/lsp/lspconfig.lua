@@ -48,7 +48,6 @@ return {
                 }
             })
             lspconfig["clangd"].setup({
-                cmd = {"/usr/bin/clangd"},
                 capabilities = capabilities,
                 on_attach = on_attach,
             })

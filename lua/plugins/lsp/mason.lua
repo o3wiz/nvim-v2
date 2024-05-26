@@ -4,6 +4,23 @@ return {
         name = "mason-lspconfig",
     },
     {
+        "jay-babu/mason-null-ls.nvim",
+        name = "mason-null-ls",
+        event = { "BufReadPre", "BufNewFile" },
+        dependencies = {
+            "williamboman/mason.nvim",
+            "nvimtools/none-ls.nvim",
+        },
+        opts = {
+            ensure_installed = {
+                "prettier",
+                "stylua",
+                "black",
+                "clang-format",
+            }
+        },
+    },
+    {
         "williamboman/mason.nvim",
         name = "mason",
         dependencies = {
@@ -15,7 +32,7 @@ return {
             mason.setup({})
             mason_lspconfig.setup({
                 ensure_installed = {
-                    -- "clangd",
+                    "clangd",
                     "pyright",
                     "rust_analyzer",
                     "tsserver"
